@@ -85,14 +85,6 @@
             const totalIncome = document.getElementById('total-income');
             const navToggle = document.getElementById('nav-toggle');
             const navLinks = document.querySelectorAll('.nav-menu a');
-            const navMenu = document.querySelector('.nav-menu');
-
-            // Smartphone detection
-            const isSmartphone = /Android|iPhone/i.test(navigator.userAgent) && !/iPad|Tablet/i.test(navigator.userAgent) && window.innerWidth <= 768;
-
-            if (isSmartphone) {
-                navMenu.classList.add('is-mobile');
-            }
 
             prequalBtn.addEventListener('click', () => {
                 prequalBtn.classList.add('bg-blue-600', 'text-white');
